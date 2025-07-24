@@ -1,5 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // 优化构建性能
+  experimental: {
+    optimizePackageImports: ['@stripe/stripe-js', '@stripe/react-stripe-js'],
+  },
+  // 静态导出配置
+  output: 'standalone',
   images: {
     remotePatterns: [
       {

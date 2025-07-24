@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import PrintButton from '@/components/PrintButton';
 
 export default function SuccessPage() {
   // Demo order data
@@ -91,12 +92,7 @@ export default function SuccessPage() {
             >
               Continue Shopping
             </Link>
-            <button
-              onClick={() => window.print()}
-              className="border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors"
-            >
-              Print Receipt
-            </button>
+            <PrintButton />
           </div>
         </div>
       </main>
